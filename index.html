@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetable-Market</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <style>
+        .font-sora {
+        font-family: "Sora", serif;
+        }
+    </style>
+</head>
+<body class="font-sora">
+    <header class="bg-gradient-to-t from-[#EFEBE3] to-[#FFFFFF]">
+        <!-- nav bar start -->
+        <nav class="flex justify-between w-11/12 mx-auto mt-10">
+            <img src="./c2-assets/logo-header.png" alt="">
+            <ul class="hidden lg:flex gap-6 pl-80">
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+            <div class="hidden lg:flex gap-2">
+                <div class=" hidden sm:block ">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <a class="btn bg-white border-[#179800]">Login</a>
+                    <a class="btn border-none text-white bg-[#179800]">Register</a>
+                  </div>
+                </div>
+                <div class="sm:block lg:hidden">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <hr class="border-t-green-600 sm:block lg:hidden">
+        </nav>
+        <!-- nav bar end -->
+        <!-- banner -->
+        <section class="mt-20 w-11/12 mx-auto flex flex-col">
+            <div class="text-center">
+                <h1 class="text-5xl font-bold leading-tight">Freshness <span class="text-[#179800]">You Can<br>Count</span> On, Prices You’ll Love!</h1>
+                <p class="mt-3 opacity-80">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+            </div>
+            <div class="flex justify-center">
+                <img class="max-w-xl mt-3" src="./c2-assets/hero-vegetables.png" alt="">
+            </div>
+        </section>
+        <!-- banner end -->
+    </header>
+    <!--main section start -->
+    <main class="container mx-auto">
+
+        <!-- service section -->
+        <section class="my-24 lg:ml-14">
+           <h2 class=" ml-3 font-semibold text-3xl text-lime-600">Services</h2>
+  
+        <!-- cards -->
+            <div class="mt-10 mx-2 grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3 ">
+            <!-- card1 -->
+                <div class="card bg-[#efebe3] lg:w-[424px] sm:w-[356px]">
+                   <figure class="px-10 pt-10">
+                   <img src="c2-assets/service.png" class="rounded-full border-[25px] border-white"/>
+               </figure>
+               <div class="card-body items-center text-center">
+                   <h2 class="card-title font-semibold text-2xl">24/7 Services</h2>
+                   <p class="font-light text-xl">Enjoy farm-fresh vegetables any time of the day or night with our 24/7 service</p>
+                </div>
+                </div>
+            <!-- card2 -->
+            <div class="card bg-[#efebe3] lg:w-[424px] sm:w-[356px]">
+                <figure class="px-10 pt-10">
+                    <img src="c2-assets/delivery.png" class="rounded-full border-[25px] border-white"/>
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title font-semibold text-2xl">Fast Delivery</h2>
+                    <p class="font-light text-xl">Get the freshest vegetables delivered to your doorstep in no time with our rapid delivery service</p>
+                </div>
+            </div>
+            <!-- card3 -->
+            <div class="card bg-[#efebe3] lg:w-[424px] sm:w-[356px]">
+                <figure class="px-10 pt-10">
+                    <img src="c2-assets/healthy.png" class="rounded-full border-[25px] border-white"/>
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title font-semibold text-2xl">Healthy Products</h2>
+                    <p class="font-light text-xl">Experience the best in fresh, organic vegetables, grown with care and bursting with flavor</p>
+              </div>
+            </div>
+        </div>
+        </section>
+    </main> 
